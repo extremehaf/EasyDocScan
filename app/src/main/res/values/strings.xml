@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">EasyDocScan</string>
+    <string name="title_activity_fitros">Fitros</string>
+    <string name="title_activity_edicao">Edição</string>
+    <string name="title_activity_crop">Crop</string>
+    <string name="foto">Foto</string>
+
+    <string name="menu_order_data">Ordenar por data</string>
+    <string name="menu_order_nome">Ordenar por nome</string>
+
+    <string name="options">Options</string>
+    <string name="search_placeholder">Pesquisar</string>
+
+    <string name="description_info">Info</string>
+
 </resources>

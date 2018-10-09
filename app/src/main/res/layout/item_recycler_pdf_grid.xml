@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/grid_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/grid_border_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/preview_foto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_preview_height"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/txt_titulo"
+                style="@style/autoSizeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preview_foto"
+                android:layout_marginRight="40dp"
+                android:ellipsize="middle"
+                android:paddingLeft="@dimen/grid_title_padding"
+                android:paddingRight="@dimen/grid_title_padding"
+                android:paddingTop="@dimen/grid_title_padding"
+                android:textColor="@color/grid_titulo"
+                android:textSize="@dimen/grid_title" />
+
+            <TextView
+                android:id="@+id/txt_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_titulo"
+                android:paddingBottom="@dimen/grid_count_padding_bottom"
+                android:paddingLeft="@dimen/titulo_padding"
+                android:paddingRight="@dimen/titulo_padding"
+                android:textSize="@dimen/grid_count" />
+
+            <TextView
+                android:id="@+id/txt_paginas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_data"
+                android:paddingBottom="@dimen/grid_count_padding_bottom"
+                android:paddingLeft="@dimen/titulo_padding"
+                android:paddingRight="@dimen/titulo_padding"
+                android:textSize="@dimen/grid_count" />
+
+            <TextView
+                android:id="@+id/txt_tamanho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txt_data"
+                android:paddingBottom="@dimen/grid_count_padding_bottom"
+                android:paddingLeft="@dimen/titulo_padding"
+                android:paddingRight="@dimen/titulo_padding"
+                android:textSize="@dimen/grid_count" />
+
+            <ImageView
+                android:id="@+id/ic_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/preview_foto"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_context"
+                android:clickable="true"
+                android:padding="8dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
