@@ -21,8 +21,8 @@ class AmazonS3Conection(bucketName: String, key: String, secrect: String) {
 
     private var PREFIX = "LMELO"
     private var BUCKET = "osas"
-    private var KEY = "AKIAJOKSTNOS5AIEMKXQ"
-    private var SECRET = "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"
+    private var KEY = ""
+    private var SECRET = ""
 
     var s3Client: AmazonS3Client? = null
     private var credenciais: BasicAWSCredentials? = null
